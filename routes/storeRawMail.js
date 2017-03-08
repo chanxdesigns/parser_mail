@@ -9,7 +9,7 @@ const parsebody = bodyParser.urlencoded({extended: true});
  */
 router.post('/store/raw', parsebody, function (req, res) {
     console.log(req.body);
-    res.status(200);
+    res.status(200).send('Yo Done');
 });
 
 router.get('/', function (req, res) {
