@@ -6,7 +6,7 @@ const storeRaw = require('./routes/storeRawMail');
 /**
  * Connect MongoDB
  */
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://127.0.0.1:27017');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017');
 
 /**
  * Use Express Router
