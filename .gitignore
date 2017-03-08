@@ -1,0 +1,2 @@
+# Exclude nodejs vendor modules
+node_modules
