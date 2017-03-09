@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Schema = require('../models/Schema');
 
-const parsebody = bodyParser.urlencoded({extended: true});
+const parsebody = bodyParser.urlencoded({extended: true, limit: '5mb'});
 
 /**
  * Raw Mail Body Stored in Mongo DB
